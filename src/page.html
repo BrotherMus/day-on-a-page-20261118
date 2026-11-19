@@ -18,6 +18,7 @@
     --africa: #a8740c;
     --americas: #2c7a4b;
     --global: #5a3fa6;
+    --oceania: #b0277a;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { width: 1024px; height: 1024px; overflow: hidden; }
@@ -88,13 +89,21 @@
   /* ---------- briefs ---------- */
   .briefs { position: absolute; left: 20px; top: 741px; width: 984px; height: 232px; }
   .briefs .head {
-    font-size: 12px; font-weight: 800; letter-spacing: 2.6px; border-top: 2px solid var(--ink); padding-top: 4px; height: 24px;
+    font-size: 12px; font-weight: 800; letter-spacing: 2.6px; border-top: 2px solid var(--ink); padding-top: 3px; height: 22px;
   }
   .briefs .head span { color: #7b808a; font-weight: 700; letter-spacing: 1.2px; margin-left: 10px; font-size: 10.5px; }
-  .cols { display: flex; gap: 18px; }
-  .cols ol { list-style: none; width: 316px; }
+  .briefs { display: flex; gap: 16px; }
+  .where { width: 284px; flex: none; }
+  .also { flex: 1; }
+  .legend { display: flex; flex-wrap: wrap; gap: 3px 9px; margin-top: 6px; font-size: 10.5px; font-weight: 700; line-height: 14px; }
+  .legend span { white-space: nowrap; }
+  .legend i { display: inline-block; width: 9px; height: 9px; border-radius: 5px; margin-right: 4px; }
+  .key { font-size: 10px; color: #6a6f79; margin-top: 5px; }
+  .bg-oceania { background: var(--oceania); }
+  .cols { display: flex; gap: 15px; }
+  .cols ol { list-style: none; width: 218px; }
   .cols li {
-    font-size: 12px; line-height: 15px; height: 22.5px; padding-top: 3.5px; border-bottom: 1px solid var(--rule);
+    font-size: 11.6px; line-height: 15px; height: 18.8px; padding-top: 1.8px; border-bottom: 1px solid var(--rule);
     white-space: nowrap; overflow: hidden; display: flex; align-items: baseline;
   }
   .cols li b { margin-right: 4px; }
@@ -144,18 +153,19 @@
     <div class="yr">WED · 2026</div>
   </div>
   <div class="kicker">THE WORLD'S NEWS OF ONE DAY</div>
-  <div class="count">38 STORIES · 6 CONTINENTS · DEEP SPACE</div>
+  <div class="count">44 STORIES · 7 REGIONS · 6 CONTINENTS</div>
   <h1>Wednesday 18 November 2026</h1>
   <div class="pledge">Every story on this page happened, or was first reported, on Wednesday 18 November 2026.</div>
 </div>
 
 <div class="tally">
-  <div class="bg-asia" style="flex:7">ASIA-PACIFIC 7</div>
-  <div class="bg-europe" style="flex:6">EUROPE 6</div>
-  <div class="bg-mideast" style="flex:6">MIDDLE EAST 6</div>
-  <div class="bg-africa" style="flex:6">AFRICA 6</div>
-  <div class="bg-americas" style="flex:8">AMERICAS 8</div>
-  <div class="bg-global" style="flex:5">GLOBAL · SPACE 5</div>
+  <div class="bg-asia" style="flex:7">ASIA 7</div>
+  <div class="bg-oceania" style="flex:6">OCEANIA 2</div>
+  <div class="bg-europe" style="flex:7">EUROPE 6</div>
+  <div class="bg-mideast" style="flex:9">MIDDLE EAST 8</div>
+  <div class="bg-africa" style="flex:7">AFRICA 6</div>
+  <div class="bg-americas" style="flex:9">AMERICAS 10</div>
+  <div class="bg-global" style="flex:9">GLOBAL · SPACE 5</div>
 </div>
 
 <!-- ================= lead: Shenzhen ================= -->
@@ -226,7 +236,7 @@
     <text x="137" y="34.5" font-size="10.5" font-weight="800" letter-spacing="1" fill="#ffd166" text-anchor="middle">THREE-WAY TALKS WITH PUTIN: THU</text>
   </svg>
   <div class="txt">
-    <div class="tag c-asia"><span class="num bg-asia">1</span>ASIA-PACIFIC · DIPLOMACY<span class="src">AP · AL JAZEERA · PBS</span></div>
+    <div class="tag c-asia"><span class="num bg-asia">1</span>ASIA · APEC SUMMIT<span class="src">AP · AL JAZEERA · PBS</span></div>
     <h2>Xi greets Trump on the tarmac in Shenzhen</h2>
     <p>A rare airport welcome from China's leader opens APEC leaders' week. Trump and Putin are due to meet one-on-one on Thursday, alongside three-way talks with Xi.</p>
   </div>
@@ -521,41 +531,104 @@
 
 <!-- ================= briefs ================= -->
 <div class="briefs">
-  <div class="head">ALSO ON WEDNESDAY 18 NOVEMBER<span>27 MORE STORIES, BY REGION</span></div>
-  <div class="cols">
-    <ol>
-      <li><i class="bg-asia">12</i><b>Manila:</b> Trump meets Imelda Marcos on his visit</li>
-      <li><i class="bg-asia">13</i><b>Thailand:</b> arsenic from Myanmar mines taints water</li>
-      <li><i class="bg-asia">14</i><b>Kashmir:</b> Indian troops kill a militant commander</li>
-      <li><i class="bg-asia">15</i><b>Australia:</b> wages rise at fastest pace since 2023</li>
-      <li><i class="bg-asia">16</i><b>Chattogram:</b> arsonists torch Yunus's family home</li>
-      <li><i class="bg-europe">17</i><b>Odesa:</b> Russian strikes kill four; Kyiv loses power</li>
-      <li><i class="bg-europe">18</i><b>London:</b> UK sanctions West Bank settlement builders</li>
-      <li><i class="bg-europe">19</i><b>Madrid:</b> court opens a Julio Iglesias inquiry</li>
-      <li><i class="bg-mideast">20</i><b>Yemen:</b> Saudi-led coalition hits 60 Houthi sites</li>
-    </ol>
-    <ol>
-      <li><i class="bg-mideast">21</i><b>Gaza:</b> Board of Peace warns the truce may collapse</li>
-      <li><i class="bg-mideast">22</i><b>Baghdad:</b> six French citizens get life over ISIL</li>
-      <li><i class="bg-mideast">23</i><b>Lebanon:</b> US puts new sanctions on Hezbollah</li>
-      <li><i class="bg-africa">24</i><b>Senegal:</b> boat carrying 100 migrants capsizes</li>
-      <li><i class="bg-africa">25</i><b>Maputo:</b> opposition leader Mondlane goes on trial</li>
-      <li><i class="bg-africa">26</i><b>Guinea:</b> 224 jailed over illegal gold mining</li>
-      <li><i class="bg-africa">27</i><b>Ethiopia–Eritrea:</b> border fighting flares near Badme</li>
-      <li><i class="bg-africa">28</i><b>Pretoria:</b> South Africa rebukes Nigeria's new envoy</li>
-      <li><i class="bg-africa">29</i><b>Kampala:</b> Besigye's family renews plea for his release</li>
-    </ol>
-    <ol>
-      <li><i class="bg-americas">30</i><b>Caracas:</b> Hegseth signs US–Venezuela military pact</li>
-      <li><i class="bg-americas">31</i><b>Haiti:</b> Salvadoran troops raze a gang chief's house</li>
-      <li><i class="bg-americas">32</i><b>Washington:</b> Congress grills Mullin on tech outages</li>
-      <li><i class="bg-americas">33</i><b>California:</b> Waymo halts driverless freeway rides</li>
-      <li><i class="bg-americas">34</i><b>US farms:</b> bird flu forces a cull of 1.8m birds</li>
-      <li><i class="bg-global">35</i><b>FIFA:</b> three challengers file to face Infantino</li>
-      <li><i class="bg-global">36</i><b>The Hague:</b> ICJ readies its Rohingya genocide ruling</li>
-      <li><i class="bg-global">37</i><b>Pew:</b> Muslims to outnumber Christians by 2035</li>
-      <li><i class="bg-global">38</i><b>Gaming:</b> GTA VI arrives after a 13-year wait</li>
-    </ol>
+  <!-- the map: coordinates are longitude and latitude, drawn north-up -->
+  <div class="where">
+    <div class="head">WHERE IT HAPPENED</div>
+    <svg width="284" height="140" viewBox="-170 -82 350 143" preserveAspectRatio="none">
+      <rect x="-170" y="-82" width="350" height="143" fill="#dce8f0"/>
+      <g transform="scale(1,-1)" fill="#b4bec9">
+        <polygon points="-168,66 -156,71 -130,70 -110,68 -95,72 -82,70 -78,62 -64,60 -56,52 -66,45 -70,42 -76,35 -81,31 -80,25 -83,29 -90,30 -97,26 -97,20 -90,21 -87,16 -83,10 -78,8 -80,7 -86,12 -92,15 -105,20 -110,24 -114,30 -118,34 -124,40 -124,48 -135,58 -150,60 -160,56 -166,60"/>
+        <polygon points="-52,60 -42,60 -22,70 -20,80 -40,83 -60,81 -70,77 -56,70"/>
+        <polygon points="-78,8 -72,12 -62,10 -52,5 -50,0 -36,-6 -39,-14 -41,-22 -48,-27 -57,-37 -65,-41 -68,-52 -73,-52 -74,-42 -71,-30 -70,-18 -76,-13 -81,-5 -80,1"/>
+        <polygon points="-9,37 -9,43 -2,44 -4,48 2,51 8,54 8,57 5,58 6,62 14,68 26,71 40,67 60,69 70,73 100,77 112,74 140,73 160,70 180,68 180,65 170,60 163,57 157,51 143,54 136,54 140,48 130,42 128,36 122,39 120,34 122,30 119,25 112,21 108,21 106,17 109,12 105,9 100,13 100,3 104,1 98,8 97,16 92,22 88,22 80,15 78,8 73,17 72,21 66,25 57,25 52,27 48,30 51,25 56,24 59,22 55,17 45,13 43,15 39,21 35,28 34,31 36,36 28,36 27,40 23,40 22,37 19,42 13,45 16,41 16,38 12,42 8,44 3,43 0,39 -5,36"/>
+        <polygon points="-17,15 -16,22 -10,29 -6,35 10,37 20,32 32,31 35,24 38,18 43,12 51,12 48,5 40,-3 40,-15 35,-24 32,-29 26,-34 19,-34 15,-27 12,-17 13,-8 9,-1 9,4 4,6 -8,4 -13,9"/>
+        <polygon points="114,-22 122,-18 130,-12 137,-12 136,-16 142,-11 146,-19 153,-27 150,-37 144,-38 138,-34 131,-31 124,-33 116,-35 114,-27"/>
+        <polygon points="-5,50 1,51 0,54 -2,58 -6,58 -4,54"/>
+        <polygon points="-10,52 -6,52 -6,55 -9,54"/>
+        <polygon points="-24,65 -14,66 -15,63 -22,63"/>
+        <polygon points="130,32 135,34 140,36 142,40 141,44 144,44 141,41 139,37 133,35"/>
+        <polygon points="95,5 104,-5 106,-6 100,2"/>
+        <polygon points="109,1 117,7 119,1 116,-4 110,-2"/>
+        <polygon points="106,-7 114,-8 114,-7 106,-6"/>
+        <polygon points="131,-1 141,-3 150,-6 147,-10 141,-9 134,-4"/>
+        <polygon points="120,18 122,18 126,8 122,7 120,13"/>
+        <polygon points="44,-16 50,-15 47,-25 44,-23"/>
+        <polygon points="173,-35 178,-38 175,-41 168,-46 170,-43 173,-41"/>
+      </g>
+      <!-- briefs: one dot each, in its region's colour -->
+      <g fill="#0f7f7a"><circle cx="121" cy="-14.6" r="2.4"/><circle cx="99.8" cy="-19.9" r="2.4"/><circle cx="75" cy="-33.7" r="2.4"/><circle cx="91.8" cy="-22.3" r="2.4"/><circle cx="127" cy="-37.6" r="2.4"/></g>
+      <g fill="#b0277a"><circle cx="149" cy="-35.3" r="2.4"/><circle cx="145" cy="-37.8" r="2.4"/></g>
+      <g fill="#2757a8"><circle cx="30.7" cy="-46.5" r="2.4"/><circle cx="-0.1" cy="-51.5" r="2.4"/><circle cx="-3.7" cy="-40.4" r="2.4"/></g>
+      <g fill="#b8431f"><circle cx="44.2" cy="-15.4" r="2.4"/><circle cx="34.3" cy="-31.5" r="2.4"/><circle cx="44.4" cy="-33.3" r="2.4"/><circle cx="35.5" cy="-33.9" r="2.4"/><circle cx="42" cy="-36" r="2.4"/><circle cx="35.2" cy="-29.5" r="2.4"/></g>
+      <g fill="#a8740c"><circle cx="-17.4" cy="-14.7" r="2.4"/><circle cx="32.6" cy="25.9" r="2.4"/><circle cx="-9.2" cy="-11.4" r="2.4"/><circle cx="37.8" cy="-14.7" r="2.4"/><circle cx="28.2" cy="25.7" r="2.4"/><circle cx="32.6" cy="-0.3" r="2.4"/></g>
+      <g fill="#2c7a4b"><circle cx="-66.9" cy="-10.5" r="2.4"/><circle cx="-72.3" cy="-18.5" r="2.4"/><circle cx="-77" cy="-38.9" r="2.4"/><circle cx="-112" cy="-33.4" r="2.4"/><circle cx="-93" cy="-42" r="2.4"/><circle cx="-78.5" cy="0.2" r="2.4"/><circle cx="-63" cy="5" r="2.4"/></g>
+      <g fill="#5a3fa6"><circle cx="8.5" cy="-47.4" r="2.4"/><circle cx="4.3" cy="-52.1" r="2.4"/></g>
+      <!-- the eleven drawn stories: numbered pins -->
+      <g font-size="11.4" font-weight="800" text-anchor="middle" fill="#fff" stroke-width="1.2">
+        <g transform="translate(114,-22.5)"><circle r="8.6"fill="#0f7f7a" stroke="#fff"/><text y="3.9">1</text></g>
+        <g transform="translate(52,-27)"><circle r="8.6"fill="#b8431f" stroke="#fff"/><text y="3.9">2</text></g>
+        <g transform="translate(38,-47)"><circle r="8.6"fill="#2757a8" stroke="#fff"/><text y="3.9">4</text></g>
+        <g transform="translate(27,-30)"><circle r="8.6"fill="#b8431f" stroke="#fff"/><text y="3.9">5</text></g>
+        <g transform="translate(-122,-38)"><circle r="8.6"fill="#2c7a4b" stroke="#fff"/><text y="3.9">6</text></g>
+        <g transform="translate(-82,-34)"><circle r="8.6"fill="#2c7a4b" stroke="#fff"/><text y="3.9">7</text></g>
+        <g transform="translate(-68,-45)"><circle r="8.6"fill="#2c7a4b" stroke="#fff"/><text y="3.9">8</text></g>
+        <g transform="translate(10,-45)"><circle r="8.6"fill="#2757a8" stroke="#fff"/><text y="3.9">9</text></g>
+        <g transform="translate(-9,-57)"><circle r="8.6"fill="#2757a8" stroke="#fff"/><text y="3.5" font-size="9.4">10</text></g>
+        <g transform="translate(88,-27)"><circle r="8.6"fill="#0f7f7a" stroke="#fff"/><text y="3.5" font-size="9.4">11</text></g>
+        <g transform="translate(-152,38)"><circle r="8.6"fill="#5a3fa6" stroke="#fff"/><text y="3.9">3</text></g>
+      </g>
+      <text x="-139" y="42" font-size="10" font-weight="800" fill="#5a3fa6">→ Voyager 1, deep space</text>
+    </svg>
+    <div class="legend">
+      <span><i class="bg-asia"></i>Asia 7</span><span><i class="bg-oceania"></i>Oceania 2</span><span><i class="bg-europe"></i>Europe 6</span>
+      <span><i class="bg-mideast"></i>Middle East 8</span><span><i class="bg-africa"></i>Africa 6</span><span><i class="bg-americas"></i>Americas 10</span>
+      <span><i class="bg-global"></i>Global and space 5</span>
+    </div>
+    <div class="key">Numbered pins: the 11 drawn stories. Dots: the 33 briefs.</div>
+  </div>
+  <div class="also">
+    <div class="head">ALSO ON WEDNESDAY 18 NOVEMBER<span>33 MORE STORIES, BY REGION</span></div>
+    <div class="cols">
+      <ol>
+        <li><i class="bg-asia">12</i><b>Manila:</b> Trump meets Imelda Marcos</li>
+        <li><i class="bg-asia">13</i><b>Thailand:</b> arsenic in Mekong water</li>
+        <li><i class="bg-asia">14</i><b>Kashmir:</b> militant chief killed</li>
+        <li><i class="bg-asia">15</i><b>Chattogram:</b> Yunus home torched</li>
+        <li><i class="bg-asia">16</i><b>Seoul:</b> exam curbs on AI cheating</li>
+        <li><i class="bg-oceania">17</i><b>Canberra:</b> wages up most since 2023</li>
+        <li><i class="bg-oceania">18</i><b>Australia:</b> cricket probe ruled out</li>
+        <li><i class="bg-europe">19</i><b>Odesa:</b> Russian strikes kill four</li>
+        <li><i class="bg-europe">20</i><b>UK:</b> West Bank builders sanctioned</li>
+        <li><i class="bg-europe">21</i><b>Spain:</b> court probes Julio Iglesias</li>
+        <li><i class="bg-mideast">22</i><b>Yemen:</b> 60 Houthi sites bombed</li>
+      </ol>
+      <ol>
+        <li><i class="bg-mideast">23</i><b>Gaza:</b> Board of Peace fears collapse</li>
+        <li><i class="bg-mideast">24</i><b>Iraq:</b> six French jailed for life</li>
+        <li><i class="bg-mideast">25</i><b>Lebanon:</b> US sanctions Hezbollah</li>
+        <li><i class="bg-mideast">26</i><b>Baghdad:</b> IRGC commander visits</li>
+        <li><i class="bg-mideast">27</i><b>Israel:</b> Gaza doctor still detained</li>
+        <li><i class="bg-africa">28</i><b>Senegal:</b> migrant boat capsizes</li>
+        <li><i class="bg-africa">29</i><b>Maputo:</b> Mondlane goes on trial</li>
+        <li><i class="bg-africa">30</i><b>Guinea:</b> 224 jailed for gold mining</li>
+        <li><i class="bg-africa">31</i><b>Badme:</b> Ethiopia–Eritrea clashes</li>
+        <li><i class="bg-africa">32</i><b>Pretoria:</b> Nigerian envoy rebuked</li>
+        <li><i class="bg-africa">33</i><b>Kampala:</b> plea to free Besigye</li>
+      </ol>
+      <ol>
+        <li><i class="bg-americas">34</i><b>Caracas:</b> US military pact signed</li>
+        <li><i class="bg-americas">35</i><b>Haiti:</b> gang chief's house razed</li>
+        <li><i class="bg-americas">36</i><b>US:</b> Mullin grilled over outages</li>
+        <li><i class="bg-americas">37</i><b>US:</b> Waymo halts freeway rides</li>
+        <li><i class="bg-americas">38</i><b>US:</b> bird flu cull of 1.8m birds</li>
+        <li><i class="bg-americas">39</i><b>Ecuador:</b> fishermen sue the US</li>
+        <li><i class="bg-americas">40</i><b>Brazil:</b> isolated tribe on camera</li>
+        <li><i class="bg-global">41</i><b>FIFA:</b> three challenge Infantino</li>
+        <li><i class="bg-global">42</i><b>The Hague:</b> Rohingya ruling due Thu</li>
+        <li><i class="bg-global">43</i><b>Pew:</b> Islam to top faiths by 2035</li>
+        <li><i class="bg-global">44</i><b>Gaming:</b> GTA VI out after 13 years</li>
+      </ol>
+    </div>
   </div>
 </div>
 
