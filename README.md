@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261118/BrotherMus/day-on-a-page-20261118/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![reward](https://make.fun/badge/news-image-20261118/BrotherMus/day-on-a-page-20261118/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-One image that sums up the world's news of Wednesday 18 November 2026 as a newspaper front page: 44 stories from seven regions, six continents and deep space, eleven of them drawn and pinned on a hand-drawn world map, each one checked against a report dated that day. The page is hand-written HTML and SVG (`src/page.html`), rendered once to `entry.png`; the entry program checks that file and writes it to the grader's output folder.
+One image that sums up the world's news of Wednesday 18 November 2026 as a newspaper front page: 44 stories from seven regions, six continents and deep space, eleven of them drawn and pinned on a hand-drawn world map, each one checked against a report dated that day. The three lead stories carry the largest type so the page still reads at thumbnail size. The page is hand-written HTML and SVG (`src/page.html`), rendered once to `entry.png`; the entry program checks that file and writes it to the grader's output folder.
 
 ![The day on a page: Wednesday 18 November 2026](entry.png)
 
