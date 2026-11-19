@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261118/BrotherMus/day-on-a-page-20261118/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![reward](https://make.fun/badge/news-image-20261118/BrotherMus/day-on-a-page-20261118/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-One image that sums up the world's news of Wednesday 18 November 2026 as a newspaper front page: 47 stories from seven regions, six continents and deep space, eleven of them drawn and pinned on a hand-drawn world map, each one checked against a report dated that day. The three lead stories carry the largest type so the page still reads at thumbnail size. The page is hand-written HTML and SVG (`src/page.html`), rendered once to `entry.png`; the entry program checks that file and writes it to the grader's output folder.
+One image that sums up the world's news of Wednesday 18 November 2026 as a newspaper front page: 44 stories from seven regions, six continents and deep space, eleven of them drawn and pinned on a hand-drawn world map, each one checked against a report dated that day. A strip under the date walks through the day hour by hour in UTC, and three equal lead stories carry the largest pictures and type so the page still reads at thumbnail size. The page is hand-written HTML and SVG (`src/page.html`), rendered once to `entry.png`; the entry program checks that file and writes it to the grader's output folder.
 
 ![The day on a page: Wednesday 18 November 2026](entry.png)
 
@@ -31,7 +31,7 @@ python build.py --preview
 
 ## Choosing the stories
 
-The rule for the page is the bounty's own: a story is in only if it happened, or was first reported, on 18 November 2026. Three stories lead because they were the day's most consequential in diplomacy, war and science; eight more are drawn to cover Europe, the Middle East, the Americas and Asia across politics, business, art, the economy and labour; 36 briefs fill in the rest, grouped by region and dotted on the map, and a closing line gives the day in numbers. News that broke on Tuesday (the Kerch Bridge span collapse, the US strike on Qeshm) or that was still to come on Thursday (the three-way summit, the ICJ ruling) is named in the page's date check rather than shown as Wednesday's.
+The rule for the page is the bounty's own: a story is in only if it happened, or was first reported, on 18 November 2026. Three stories lead because they were the day's most consequential in diplomacy, war and science; eight more are drawn to cover the war in Ukraine, Europe's aid, US markets and politics, a cyclone bearing down on India, Sudan's war and Gaza, each picture carrying its key number; 33 briefs fill in the rest, grouped by region and dotted on the map, and a closing line gives the day in numbers. News that broke on Tuesday (the Kerch Bridge span collapse, the US strike on Qeshm) or that was still to come (the three-way summit and the ICJ ruling on Thursday, the cyclone's landfall on Friday) is named in the page's date check rather than shown as Wednesday's.
 
 ---
 
